@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ${PWD}/Dockerfile
+    command: /bin/bash
+    volumes:
+      - ${PWD}/data:/home/kwy8791/data
+    stdin_open: true
+    tty: true
