@@ -7,5 +7,6 @@ services:
     command: /bin/bash
     volumes:
       - ${PWD}/data:/home/kwy8791/data
+      - ${PWD}/conf/.ssh:/home/kwy8791/.ssh
     stdin_open: true
     tty: true
